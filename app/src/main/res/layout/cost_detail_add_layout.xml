@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/add_title"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加新的账目条目"/>
+
+    <EditText
+        android:layout_below="@id/add_title"
+        android:id="@+id/add_cost_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:hint="cost title"/>
+
+    <EditText
+        android:id="@+id/add_cost_money"
+        android:layout_below="@id/add_cost_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:hint="cost money"/>
+
+    <DatePicker
+        android:id="@+id/add_cost_date"
+        android:layout_below="@id/add_cost_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false">
+
+    </DatePicker>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_cost_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Add"/>
+        <Button
+            android:id="@+id/cancel_cost_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
